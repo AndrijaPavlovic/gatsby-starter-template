@@ -1,0 +1,32 @@
+.grid {
+  display: grid;
+  grid-auto-columns: auto;
+  grid-auto-rows: auto;
+  grid-auto-flow: row;
+}
+
+.grid-prop {
+  grid: var(--xlarge-grid, var(--large-grid, var(--tablet-grid, var(--grid))));
+  gap: var(--gap);
+}
+
+.align-items-grid {
+  align-items: var(--align-items);
+}
+
+.justify-content-grid {
+  justify-items: var(--justify-items);
+}
+
+.grid {
+  padding: 0 var(--global-padding);
+
+  > .flex-container {
+    margin-right: calc(var(--global-padding) / -1);
+    margin-left: calc(var(--global-padding) / -1);
+  }
+
+  .grid {
+    padding: unset;
+  }
+}

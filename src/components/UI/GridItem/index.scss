@@ -1,0 +1,19 @@
+.grid-item {
+  grid-column: auto;
+  grid-row: auto;
+}
+
+.grid-area {
+  grid-area: var(
+    --xlarge-grid-area,
+    var(--large-grid-area, var(--tablet-grid-area, var(--grid-area)))
+  );
+}
+
+.align-self {
+  align-self: var(--align-self);
+}
+
+.justify-self {
+  justify-self: var(--justify-self);
+}

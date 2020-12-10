@@ -21,6 +21,8 @@ const SEO = props => {
         ...generateTwitterMeta(props),
       ]}
     >
+      <link type="text/css" rel="stylesheet" href={'/stylesheets/mediaQueries.css'} />
+
       {path ? <link rel="canonical" href={APP_URL + path} /> : ''}
     </Helmet>
   );

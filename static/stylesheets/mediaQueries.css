@@ -1,0 +1,22 @@
+html {
+  --mq-sm: initial;
+  --mq-tb: initial;
+  --mq-lg: initial;
+  --mq-xl: initial;
+}
+
+@media (min-width: 1024px) {
+  html {
+    --mq-lg: ;
+  }
+}
+@media (min-width: 768px) {
+  html {
+    --mq-tb: ;
+  }
+}
+@media (min-width: 0px) {
+  html {
+    --mq-sm: ;
+  }
+}
